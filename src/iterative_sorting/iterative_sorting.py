@@ -1,7 +1,7 @@
 # TO-DO: Complete the selection_sort() function below 
 def selection_sort( arr ):
     # loop through n-1 elements
-    for i in range(0, len(arr)): 
+    for i in range(0, len(arr) -1): 
       #loop number one, don't know why we need to do len(arr) - 1 instead of len(arr)
       
         lowest_index = i
@@ -14,6 +14,7 @@ def selection_sort( arr ):
 
         # TO-DO: swap
         # arr[i] = arr[lowest_index]
+        # arr[lowest_index] = arr[i]
         arr[i], arr[lowest_index] = arr[lowest_index], arr[i], 
   
     return arr
